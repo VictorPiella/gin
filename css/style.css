@@ -1,10 +1,10 @@
-#wrapper{
+/* #wrapper{
     position: absolute;
     width: 100%;
     height: 100%;
     
 }
-fistView{
+I fistView{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -30,4 +30,122 @@ fistView{
 @keyframes bottle {
     from {transform: translate(-50%, 0);}
     to {transform: translate(0%, 0);}
+} */
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap');
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+  
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-a {
+    background: #fff;
+}
+
+.section-b {
+    background: #f5f5f5;
+}
+ 
+#bottle{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.topic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 2px black;
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+table, th, td {
+    border: 2px solid black;
+    max-width: 700px;
+    padding: 5px;
+  }
+
+.cool-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cool-text h1{
+    font-size: 75px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 30px;
+    color: #e6e6e6;
+}
+#glass{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/mezcla.gif);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#jigger{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/jigger.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#pentagon{
+    width: 50%;
+    height: auto;
+}
+#tonic, #complements{
+    display: flex;
+    flex-direction: column;
+}
+#complements img{
+    width: 50%;
+}
+
+.cool-text p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 30px;
+}
+
+.end{
+    height: 20vh;
 }

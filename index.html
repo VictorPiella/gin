@@ -9,15 +9,163 @@
   <meta name="author" content="VictorPiella">
 
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="font/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script>
+//   $(document).ready(function() {
+  
+//       var screen = 0,
+//       container = $('.maincontent'),
+//       pages = $('.page'),
+//       inScroll = false;
+  
+  
+//       $('.page:first-child').addClass('active');
+  
+//       $('body').on('mousewheel', function(e) {
+      
+//       var activePage = pages.filter('.active');
+      
+//       if(!inScroll) {
+//           inScroll = true;
+//           if(e.deltaY > 0) {
+//           if(activePage.prev().length)
+//               screen--;
+//           } else {
+//           if(activePage.next().length)
+//               screen++;
+//           }
+//       }
+  
+//       var position = (-screen * 100) + '%';
+      
+//       pages.eq(screen).addClass('active').siblings().removeClass('active');
+//       container.css('top', position);
+          
+//       setTimeout(function(){
+//           inScroll = false;
+//       }, 1300);
+          
+//       });
+  
+//   });
+  
+  
+  
+  
+  </script>
+  
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="firstView">
-            <div id="bottle"></div>
-        </div>
+    <div class="wrapper">
+            <section class="page section-a">
+                    <div id="bottle" class="animated slideInLeft delay-1s"><img src="img/bombay-sapphire.jpg" alt=""></div>
+                    <div id="info">
+                        
+                        <table id="gin-info">
+                            <tr>
+                                <td colspan="2"><h1>Bombay</h1></td>
+                            </tr>
+                            <tr>
+                                <td> From ENG</td>
+                                <td> Grad: 40%</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> 
+                                    <div class="topic"></div>
+                                    <div class="topic"></div>
+                                    <div class="topic"></div>
+                                    <div class="topic"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias iste, eligendi ipsa, rem odit modi eum architecto ipsam maiores dolores eveniet sapiente veritatis fugit natus est, aliquid tempore magni?</td>
+                            </tr>
+                            <tr>
+                                <td><i class="flaticon-cachaca"></i> Feever Tree Indian</td>
+                                <td><i class="flaticon-cinnamon"></i> Twist Naranja</td>
+                            </tr>
+                        </table>
+
+                    </div>
+            </section>
+            
+            <section class="page section-b">
+               <div id="glass"></div>
+               <div class="cool-text"><h1>Cool a baloon glass and remove residual water</h1></div>
+            </section>
+
+            <section class="page section-a">
+                <div class="cool-text"><h1>Fill with 5cl of Bombay Safire</h1></div>
+                <div id="jigger"></div>
+            </section>
+
+            <section class="page section-b">
+                <div id="tonic" class="cool-text">
+                    <h1>Fill up with Sweepps la que sea</h1>
+                    <img src="img/tonic.png" alt="">
+                </div>
+                <div id="complements"class="cool-text">
+                        <h1>Aromatize with</h1>
+                        <img src="img/jinger" alt="">
+                        <img src="img/twist" alt="">
+                    </div>
+            </section>
+
+            <section class="page section-a">
+                <div class="cool-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias, laborum recusandae autem sapiente consectetur numquam molestiae dignissimos cum sunt, fugit asperiores. Quis quam perferendis voluptas inventore nisi rerum accusantium.</p>
+                </div>
+                <canvas id="pentagon" ></canvas>
+            </section>
+
+            <section class="page end section-b">
+                <div id="tonic" class="cool-text">
+                    <h1>Enjoy it</h1>
+                </div>
+            </section>
+             
     </div>
     
+    <script>
+            var marksCanvas = document.getElementById("pentagon");
+
+            var marksData = {
+                labels: ["Enebro", "Cítrico", "Especias", "Hierbas", "Frutal"],
+                datasets: [{
+                    backgroundColor: "rgba(200,0,0,0.2)",
+                    data: [3, 1, 4, 1, 4]
+                }]
+            };
+            var options = {
+                responsive: false,
+                maintainAspectRatio: true,
+                scale: {
+                    ticks: {
+                        beginAtZero: true,
+                        max: 5,
+                        stepSize: 1
+                    }
+                },
+                legend: false
+            };
+
+            var radarChart = new Chart(marksCanvas, {
+            type: 'radar',
+            data: marksData,
+            options: options
+            });
+       
+    </script>
 </body>
+
 </html>
