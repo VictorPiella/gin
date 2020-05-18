@@ -1,0 +1,88 @@
+<div class="wrapper">
+    <section class="section-a">
+            <div id="bottle" class="animated slideInLeft delay-1s"><img src="assets/bombay-sapphire.jpg" alt=""></div>
+            <div id="info" class="half">
+
+                <table id="gin-info">
+                    <tr>
+                        <td colspan="2"><h1>Bombay</h1></td>
+                    </tr>
+                    <tr>
+                        <td> From ENG</td>
+                        <td> Grad: {{ gin.grad }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="topic"></div>
+                            <div class="topic"></div>
+                            <div class="topic"></div>
+                            <div class="topic"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias iste, eligendi ipsa, rem odit modi eum architecto ipsam maiores dolores eveniet sapiente veritatis fugit natus est, aliquid tempore magni?</td>
+                    </tr>
+                    <tr>
+                        <td><i class="flaticon-cachaca"></i> Feever Tree Indian</td>
+                        <td><i class="flaticon-cinnamon"></i> Twist Naranja</td>
+                    </tr>
+                </table>
+
+            </div>
+    </section>
+
+    <section class="section-b">
+      <div class="fullwidth"><h1>Aromatic profile</h1></div>
+      <div class="half">
+        <div class="aroma-container">
+          <div class="topic"></div>
+          <div class="topic"></div>
+          <div class="topic"></div>
+          <div class="topic"></div>
+        </div>
+        <div>
+          <p>dolor sit amet consectetur adipisicing elit. Officiis alias iste, eligendi ipsa, rem odit modi eum architecto ipsam maiores dolores eveniet sapiente veritatis fugit natus est, aliquid </p>
+        </div>
+      </div>
+
+      <div class="half">
+        <canvas baseChart
+          [datasets]="radarChartData"
+          [options]="radarChartOptions"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType">
+        </canvas>
+      </div>
+    </section>
+
+    <section class="section-b">
+      <div id="glass" class="half"></div>
+      <div class="cool-text half"><h1>Cool a baloon glass and remove residual water</h1></div>
+   </section>
+
+    <section class="section-a">
+        <div class="half cool-text"><h1>Fill with 5cl of Bombay Safire</h1></div>
+        <div id="jigger" class="half"></div>
+    </section>
+
+    <section class="section-b">
+      <div class="half">
+            <h1 class="bg" >Fill up with Sweepps la que sea</h1>
+            <img class="tonic" src="assets/tonic.png" alt="">
+      </div>
+
+        <div id="complements"class="cool-text">
+                <h1>Aromatize with</h1>
+                <img src="assets/jinger" alt="">
+                <img src="assets/twist" alt="">
+            </div>
+    </section>
+
+
+    <section class="page end section-a">
+        <div id="tonic" class="cool-text">
+            <h1>Enjoy it</h1>
+        </div>
+    </section>
+
+</div>
