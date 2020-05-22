@@ -5,10 +5,10 @@
 
                 <table id="gin-info">
                     <tr>
-                        <td colspan="2"><h1>Bombay</h1></td>
+                        <td colspan="2"><h1>{{ ginName }}</h1></td>
                     </tr>
                     <tr>
-                        <td> From ENG</td>
+                        <td> From {{ gin.from }}</td>
                         <td> Grad: {{ gin.grad }}</td>
                     </tr>
                     <tr>
@@ -20,11 +20,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias iste, eligendi ipsa, rem odit modi eum architecto ipsam maiores dolores eveniet sapiente veritatis fugit natus est, aliquid tempore magni?</td>
+                        <td colspan="2">{{ gin.exerp }}</td>
                     </tr>
                     <tr>
-                        <td><i class="flaticon-cachaca"></i> Feever Tree Indian</td>
-                        <td><i class="flaticon-cinnamon"></i> Twist Naranja</td>
+                        <td><i class="flaticon-cachaca"></i> {{ gin.tonic }}</td>
+                        <td><i class="flaticon-cinnamon"></i> {{ gin.comp }}</td>
                     </tr>
                 </table>
 
@@ -41,7 +41,7 @@
           <div class="topic"></div>
         </div>
         <div>
-          <p>dolor sit amet consectetur adipisicing elit. Officiis alias iste, eligendi ipsa, rem odit modi eum architecto ipsam maiores dolores eveniet sapiente veritatis fugit natus est, aliquid </p>
+          <p>{{ gin.perf-aro }}</p>
         </div>
       </div>
 
@@ -61,13 +61,13 @@
    </section>
 
     <section class="section-a">
-        <div class="half cool-text"><h1>Fill with 5cl of Bombay Safire</h1></div>
+        <div class="half cool-text"><h1>Fill with 5cl of {{ ginName }}</h1></div>
         <div id="jigger" class="half"></div>
     </section>
 
     <section class="section-b">
       <div class="half">
-            <h1 class="bg" >Fill up with Sweepps la que sea</h1>
+            <h1 class="bg" >Fill up with {{ gin.tonic }}</h1>
             <img class="tonic" src="assets/tonic.png" alt="">
       </div>
 

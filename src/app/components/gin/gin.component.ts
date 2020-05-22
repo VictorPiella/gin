@@ -14,6 +14,7 @@ import { Label } from 'ng2-charts';
 export class GinComponent implements OnInit {
 
   gin : GinModel = new GinModel();
+  ginName;
 
   // Radar
   public radarChartOptions: RadialChartOptions = {
@@ -37,12 +38,15 @@ export class GinComponent implements OnInit {
   ngOnInit() {
 
     const id = this.route.snapshot.paramMap.get('id');
-
+    this.ginName = id;
     this.GinService.getGin( id )
       .subscribe( (resp: GinModel) => {
         this.gin = resp;
+        this.radarChartData = [
+          { data: this.gin.pentagon}
+        ];
       })
-
+   
   }
 
 }
