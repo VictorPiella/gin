@@ -1,0 +1,55 @@
+{
+    "209": {
+      "aroma": [
+        "juniper",
+        "coriander",
+        "angelica",
+        "lemon",
+        "bergamot",
+        "cardamom and Chinese cinnamon (cassia)"
+      ],
+      "comp": "a grapefruit twist",
+      "exerp": "Made in California in a traditional copper still with four-fold distilled alcohol base from corn. The aromatic ingredients are left to macerate in alcohol for one night and are slowly distilled in a process that takes about eleven hours. Snow water from the Sierra Nevada mountains is used to dilute the gin.",
+      "from": "USA",
+      "grad": "46%",
+      "pentagon": [
+        4,
+        4,
+        3,
+        1,
+        2
+      ],
+      "perf-aro": "Classic citrus gin, with elegantly blended shades of juniper and citrus with a hint of slightly sweet spices.",
+      "tonic": "Markham"
+    },
+    "GVINE-NOUAISON": {
+      "aroma": [
+        "Enebro",
+        "Cardamomo",
+        "Canela china (cassia)",
+        "Cilantro",
+        "Bayas de cubeba",
+        "Jengibre",
+        "Lima",
+        "Regaliz",
+        "Nuez moscada",
+        "Flor de uva"
+      ],
+      "comp": [
+        "Rodaja de jengibre fresco",
+        "twist de limón"
+      ],
+      "exerp": "Elaborada con los mismos ingredientes aromáticos que G'vine Floraisson pero en diferente proporción. Se reduce la cantidad de flores de uva y se incrementa la proporción de nuez moscaday de enebro. Se eleva en 3,9 por ciento la graduación alcohólica.",
+      "from": "Francia",
+      "grad": "43,9%",
+      "pentagon": [
+        3,
+        1,
+        4,
+        1,
+        4
+      ],
+      "perf-aro": "Perfil aromático: Ginebra de corte floral y especiado, en el cual predomina la flor de uva y las notas de jengibre y nuez moscada junto con el enebro.",
+      "tonic": "Schweppes jengibre y cardamomo"
+    }
+  }
