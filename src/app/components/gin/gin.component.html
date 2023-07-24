@@ -5,7 +5,7 @@
 
                 <table id="gin-info">
                     <tr>
-                        <td colspan="2"><h1>{{ ginName }}</h1></td>
+                        <td colspan="2"><h1>{{ gin.name }}</h1></td>
                     </tr>
                     <tr>
                         <td> From {{ gin.from }}</td>
@@ -41,18 +41,18 @@
           <div class="topic"></div>
         </div>
         <div>
-          <p>{{ gin.perf-aro }}</p>
+          <p>{{ gin.perfAro }}</p>
         </div>
       </div>
 
-      <div class="half">
+    <!--   <div class="half">
         <canvas baseChart
           [datasets]="radarChartData"
           [options]="radarChartOptions"
           [labels]="radarChartLabels"
           [chartType]="radarChartType">
         </canvas>
-      </div>
+      </div> -->
     </section>
 
     <section class="section-b">
@@ -61,7 +61,7 @@
    </section>
 
     <section class="section-a">
-        <div class="half cool-text"><h1>Fill with 5cl of {{ ginName }}</h1></div>
+        <div class="half cool-text"><h1>Fill with 5cl of {{ gin.name }}</h1></div>
         <div id="jigger" class="half"></div>
     </section>
 

@@ -8,8 +8,8 @@ import { GinListComponent } from './components/gin-list/gin-list.component';
 import { appRouting } from './app.routes';
 
 import { HttpClientModule } from '@angular/common/http';
-import { ChartsModule } from 'ng2-charts';
-
+/* import { ChartsModule } from 'ng2-charts';
+ */
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +21,8 @@ import { ChartsModule } from 'ng2-charts';
     AppRoutingModule,
     appRouting,
     HttpClientModule,
-    ChartsModule
-  ],
+/*     ChartsModule
+ */  ],
   providers: [],
   bootstrap: [AppComponent]
 })
